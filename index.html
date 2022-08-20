@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="flex justify-center items-center mt-2">
+      <h1 class="text-4xl font-bold text-cyan-600">Money Monster</h1>
+      <img src="images/money-bag.png" alt="" />
+    </header>
+
+    <main>
+      <section class="flex flex-col lg:flex-row mb-10 justify-center">
+        <div class="mx-5">
+          <img
+          class="w-full"
+            src="images/money-calculation-image.png"
+            alt=""
+          />
+        </div>
+        <div class="px-40 py-10 bg-gray-200 mx-5">
+          <h3 class="text-center font-medium text-2xl my-2">Income</h3>
+          <div class="flex items-center justify-center">
+            <p class="text-xl flex-1">Income:</p>
+            <input
+              class="block bg-gray-300 ml-2 px-2 py-2 text-black rounded-lg flex-1"
+              type="text"
+              placeholder="Total Income"
+            />
+          </div>
+          <h3 class="text-center font-medium text-2xl my-2">Expenses</h3>
+          <div class="flex justify-center">
+            <p class="text-xl flex-1">Food:</p>
+            <input
+              class="block bg-gray-300 ml-2 px-2 py-2 text-black rounded-lg flex-1"
+              type="text"
+            />
+          </div>
+          <div class="flex my-2 justify-center">
+            <p class="text-xl flex-1">Rent:</p>
+            <input
+              class="block bg-gray-300 ml-2 px-2 py-2 text-black rounded-lg flex-1"
+              type="text"
+            />
+          </div>
+
+          <div class="flex justify-center">
+            <p class="text-xl flex-1">Clothes:</p>
+            <input
+              class="block bg-gray-300 ml-2 px-2 py-2 text-black rounded-lg flex-1"
+              type="text"
+            />
+          </div>
+
+          <button
+            class="bg-sky-400 text-white px-6 py-1 rounded-lg font-medium my-2"
+          >
+            Calculate
+          </button>
+
+          <p class="text-center font-medium text-2xl">
+            Total Expenses: <span>5500</span>
+          </p>
+          <p class="my-2 text-center font-medium text-2xl">
+            Balance: <span>4500</span>
+          </p>
+
+          <div class="flex gap-x-3 justify-center items-center">
+            <p class="text-xl">Save:</p>
+            <input
+              class="block bg-gray-300 ml-2 w-3/12 py-2 text-black rounded-lg"
+              type="text"
+            />
+            <p>%</p>
+            <button
+              class="bg-sky-400 text-white px-6 py-1 rounded-lg font-medium"
+            >
+              Save
+            </button>
+          </div>
+          <p class="my-2 text-center font-medium text-2xl">
+            Saving Amount: <span>2000</span>
+          </p>
+          <p class="text-center font-medium text-2xl">
+            Remaining: <span>2500</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
